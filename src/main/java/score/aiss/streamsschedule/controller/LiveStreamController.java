@@ -27,9 +27,11 @@ public class LiveStreamController {
 
     // http://localhost:8080/streams/0b478404-03d3-4969-8d78-1e89042f5fe8
     @GetMapping("/{id}")
-    public LiveStream findById(@PathVariable String id) {
-        return repository.findById(id);
+    public LiveStream findById(@PathVariable String ide) {
+        return repository.findById(ide);
     }
+
+
 
 
 }
